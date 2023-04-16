@@ -49,7 +49,7 @@ class Commands(commands.Cog):
     async def test4(self, interaction: nextcord.Interaction):
         members = interaction.guild.members
         user = random.choice(members)
-        await interaction.response.send_message(
+        await interaction.send(
             f"{interaction.user.display_name} slaps {user.mention} in {interaction.channel.mention}"
         )
 
