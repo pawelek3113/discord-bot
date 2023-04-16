@@ -41,7 +41,7 @@ class Commands(commands.Cog):
         time = interaction.created_at
         local_time = utc_to_local(time)
 
-        await interaction.response.send_message(
+        await interaction.send(
             f"{interaction.user.display_name} says hi to {user.mention} in {interaction.channel.mention} at {format_time(local_time)}"
         )
 
