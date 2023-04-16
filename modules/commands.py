@@ -37,7 +37,7 @@ class Commands(commands.Cog):
         await interaction.send(number)
 
     @nextcord.slash_command(name="hi", guild_ids="1061263631511191632")
-    async def test3(self, interaction: nextcord.Interaction, user: nextcord.Member):
+    async def test3(self, interaction: nextcord.Interaction, member: nextcord.Member):
         time = interaction.created_at
         local_time = utc_to_local(time)
 
