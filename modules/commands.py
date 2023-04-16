@@ -42,7 +42,7 @@ class Commands(commands.Cog):
         local_time = utc_to_local(time)
 
         await interaction.send(
-            f"{interaction.user.display_name} says hi to {user.mention} in {interaction.channel.mention} at {format_time(local_time)}"
+            f"{interaction.user.display_name} says hi to {member.mention} in {interaction.channel.mention} at {format_time(local_time)}"
         )
 
     @nextcord.slash_command(name="slap", guild_ids="1061263631511191632")
