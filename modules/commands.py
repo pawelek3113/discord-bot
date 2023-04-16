@@ -34,7 +34,7 @@ class Commands(commands.Cog):
         interaction: nextcord.Interaction,
         number: int = nextcord.SlashOption(choices={"one": 1, "two": 2, "three": 3}),
     ):
-        await interaction.response.send_message(f"{number}")
+        await interaction.send(number)
 
     @nextcord.slash_command(name="hi", guild_ids="1061263631511191632")
     async def test3(self, interaction: nextcord.Interaction, user: nextcord.Member):
