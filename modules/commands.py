@@ -26,7 +26,7 @@ class Commands(commands.Cog):
 
     @nextcord.slash_command(name="parrot", guild_ids="1061263631511191632")
     async def test(self, interaction: nextcord.Interaction, msg):
-        await interaction.response.send_message(f"{arg}")
+        await interaction.send(msg)
 
     @nextcord.slash_command(name="pick", guild_ids="1061263631511191632")
     async def test2(
